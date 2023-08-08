@@ -110,15 +110,31 @@ body {
 .publication-body img {
 }
 
+ 
 .results-carousel {
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
 }
 
 .results-carousel .item {
-  margin: 5px;
-  overflow: hidden;
-  padding: 20px;
-  font-size: 0;
+  text-align: center;
+  position: relative;
+  height: 300px;
+}
+
+.results-carousel .subtitle {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  z-index: 1;
 }
 
 .results-carousel video {

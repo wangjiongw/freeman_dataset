@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>FreeMan</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -144,9 +144,7 @@
         <div class="column is-four-fifths">
 
           <div class="publication-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/g2h1YW-3n5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <!-- <iframe src="https://www.youtube.com/embed/g2h1YW3n5k" frameborder="0" allow="autoplay; encrypted-media"
-              allowfullscreen></iframe> -->
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/g2h1YW-3n5k" title="FreeMan Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -163,11 +161,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Estimating the 3D structure of the human body from natural scenes is a fundamental aspect of visual perception. This task carries great importance for fields like AIGC and human-robot interaction. 
-            In practice, 3D human pose estimation in real-world settings is a critical initial step in solving this problem. However, the current datasets, often collected under controlled laboratory conditions using complex motion capture equipment and unvarying backgrounds, are insufficient. The absence of real-world datasets is stalling the progress of this crucial task. 
-            To address facilitate the development of 3D pose estimation, we present FreeMan, the first large-scale, real-world multi-view dataset. FreeMan was captured by synchronizing 8 smartphones across diverse scenarios. It comprises 11M frames from 8000 sequences, viewed from different perspectives. 
-            These sequences cover 40 subjects across 10 different scenarios, each with varying lighting conditions. We have also established an automated, precise labeling pipeline that allows for large-scale processing efficiently. We provide comprehensive evaluation baselines for a range of tasks, underlining the significant challenges posed by FreeMan. 
-            Further evaluations of standard indoor/outdoor human sensing datasets reveal that FreeMan offers robust representation transferability in real and complex scenes. FreeMan is now publicly available at https://github.com/wangjiongw/FreeMan.
+            
+            We present <b>FreeMan</b>, the first large-scale, real-world multi-view dataset. FreeMan was captured by synchronizing 8 smartphones across diverse scenarios. It comprises <b>11M</b> frames from 8000 sequences, viewed from different perspectives. 
+            These sequences cover 40 subjects across 10 different scenarios, 27 locations, each with varying lighting conditions.
           </p>
         </div>
       </div>
@@ -207,64 +203,113 @@
 <!-- End video carousel -->
 
 
-<!-- Image carousel -->
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title">FreeMan scenarios</h2>
       <div id="results-carousel" class="carousel results-carousel">
-       <!-- <div class="item">
-        <img src="static/images/field-min.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Equipment settings.
-        </h2>
-      </div> -->
-      <div class="item">
-        <img src="static/images/Scenes-min.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Data Samples.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/scene_example-min.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Scene Examples.
-       </h2>
-     </div>
-      <div class="item">
-        <img src="static/images/pose_refine-min.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Annotation Examples.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/data_stats-min.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Dataset Statistics.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+        <div class="item">
+          <img src="static/gifs/examples/cafe.gif" alt="Cafe"/>
+          <h2 class="subtitle">
+            Cafe
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/examples/carridor.gif" alt="Carridor"/>
+          <h2 class="subtitle">
+            Carridor
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/examples/courtyard.gif" alt="Courtyard"/>
+          <h2 class="subtitle">
+            Courtyard
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/examples/dance_room.gif" alt="dance_room"/>
+          <h2 class="subtitle">
+            Dance Room
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/examples/library.gif" alt="Library"/>
+          <h2 class="subtitle">
+            Library
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/examples/lobby.gif" alt="Pack bags"/>
+          <h2 class="subtitle">
+            Lobby
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/examples/park.gif" alt="Pack bags"/>
+          <h2 class="subtitle">
+            Park
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/examples/platform.gif" alt="Pack bags"/>
+          <h2 class="subtitle">
+            Platform
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/examples/sport.gif" alt="Sport Court"/>
+          <h2 class="subtitle">
+            Sport court
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/examples/square.gif" alt="Square"/>
+          <h2 class="subtitle">
+            Square
+          </h2>
         </div>
       </div>
     </div>
   </div>
-</section> -->
-<!-- End youtube video -->
+</section>
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Comparison on Zero-shot test</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/gifs/3dpw/3dpw1.gif" alt="Pack bags"/>
+          <h2 class="subtitle  has-text-centered">
+            Flat - Pack bags
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/3dpw/3dpw2.gif" alt="Fencing"/>
+          <h2 class="subtitle has-text-centered">
+            Outdoor - Fencing
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/3dpw/3dpw3.gif" alt="Move box"/>
+          <h2 class="subtitle has-text-centered">
+            Courtyard - Move box
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/gifs/3dpw/3dpw4.gif" alt="Parcour"/>
+          <h2 class="subtitle has-text-centered">
+            Outdoor - Parcour
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 <!-- Video carousel -->
@@ -302,7 +347,7 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Paper</h2>
-      <iframe  src="static/pdfs/FreeMan_Preprint.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/FreeMan_Preprint.pdf" width="100%" height="500">
           </iframe>
       </div>
     </div>
@@ -329,10 +374,13 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
+          <h2 class="title">Acknowledgement</h2>
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
             <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
+            <!-- <br> FreeMan dataset is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative -->
+              <!-- Commons Attribution-ShareAlike 4.0 International License</a>. -->
           </p>
 
         </div>
